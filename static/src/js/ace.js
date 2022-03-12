@@ -9,9 +9,7 @@ odoo.define('web_editor_xml_reset.ace', function(require) {
       var _super = this._super.bind(this);
 
       if (this.currentType === 'xml') {
-        console.log("something")
         var resource = this.views[resID];
-        console.log(resource)
         return this._rpc({
           route: '/web_editor_xml_reset/reset_asset',
           params: {
