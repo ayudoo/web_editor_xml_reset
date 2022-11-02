@@ -39,5 +39,7 @@ class WebEditorXmlReset(Web_Editor):
 
     def _web_editor_xml_reset_recursive_unlink(self, templates):
         for template in templates:
-            self._web_editor_xml_reset_recursive_unlink(template.inherit_children_ids)
+            self._web_editor_xml_reset_recursive_unlink(
+                template.with_context(active_test=False).inherit_children_ids
+            )
             template.unlink()
