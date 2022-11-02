@@ -15,7 +15,10 @@
         "base",
         "web_editor",
     ],
-    "data": [
-        "views/templates.xml",
-    ],
+    "data": [],
+    "assets": {
+        "website.assets_editor": [
+            "web_editor_xml_reset/static/src/js/ace.js"
+        ],
+    },
 }

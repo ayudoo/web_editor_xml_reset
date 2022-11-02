@@ -5,7 +5,7 @@ Web Editor XML Reset
    :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
    :alt: License: LGPL-3
 
-**tested with Odoo 14**
+**this is the Odoo 16 branch**
 
 If there is a website specific (custom) template, you can reset it now.
 

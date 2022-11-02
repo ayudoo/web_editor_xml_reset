@@ -1,10 +1,11 @@
 odoo.define('web_editor_xml_reset.ace', function(require) {
   'use strict';
 
-  var config = require('web.config');
-  var ViewEditor = require('web_editor.ace');
+  const WebsiteAceEditor = require(
+    '@website/components/ace_editor/ace_editor'
+  ).WebsiteAceEditor;
 
-  ViewEditor.include({
+  WebsiteAceEditor.include({
     _resetResource: function (resID, type) {
       var _super = this._super.bind(this);
 
@@ -33,5 +34,5 @@ odoo.define('web_editor_xml_reset.ace', function(require) {
     }
   });
 
-  return ViewEditor;
+  return WebsiteAceEditor;
 });
